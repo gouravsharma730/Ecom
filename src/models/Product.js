@@ -6,8 +6,8 @@ const productSchema = new mongoose.Schema({
     material:String,
     productCode:String,
     rating:String,
-    specification:[{sleeveLength:String},{fit:String},{patternType:String},{length:String}],
-    category:[{color:String},{size:String},{price:String}],
+    specification:{sleeveLength:String,fit:String,patternType:String,length:String},
+    category:{color:String,size:String,price:String,availableQuantity:Number},
     gender:String
 })
 
